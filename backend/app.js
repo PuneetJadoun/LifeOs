@@ -8,6 +8,7 @@ import connectDB from "./src/config/db.js";
 // import { connectRedis } from "./src/config/redis.js";
 import routes from "./src/routes/index.js";
 import authRoutes from "./src/routes/auth.routes.js";
+import workspaceRoutes from "./src/routes/workspace.routes.js";
 
 dotenv.config();
 
@@ -32,6 +33,10 @@ app.use("/api", routes);
 
 /* Authentication routes mount */
 app.use("/api/auth", authRoutes);
+
+
+/* workspace routes mount */
+app.use("/api/workspaces", workspaceRoutes);
 
 export default app;
 
