@@ -1,7 +1,7 @@
 import Workspace from "../models/Workspace.js";
 
 
-/* get all workspaces    */
+/* create all workspaces    */
 
 export const createWorkspace = async (req, res) => {
     try{
@@ -30,7 +30,7 @@ export const getWorkspaces = async (req, res) =>{
 };
 
 
-/* get all workspaces    */
+/* get specific workspaces    */
 export const updateWorkspace = async (req,res)=>{
 try{
     const { id } = req.params;
@@ -49,7 +49,7 @@ try{
     }
 };
 
-/* get all workspaces    */
+/* delete specific workspace    */
 export const deleteWorkspace = async (req, res) =>{
     
     try{

@@ -9,6 +9,7 @@ import connectDB from "./src/config/db.js";
 import routes from "./src/routes/index.js";
 import authRoutes from "./src/routes/auth.routes.js";
 import workspaceRoutes from "./src/routes/workspace.routes.js";
+import taskRoutes from "./src/routes/task.routes.js";
 
 dotenv.config();
 
@@ -37,6 +38,10 @@ app.use("/api/auth", authRoutes);
 
 /* workspace routes mount */
 app.use("/api/workspaces", workspaceRoutes);
+
+
+/* task routes mount */
+app.use("/api/tasks", taskRoutes);
 
 export default app;
 
