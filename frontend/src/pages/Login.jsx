@@ -3,7 +3,7 @@ import { loginUser } from "../services/auth.service";
 import { useNavigate, Link } from "react-router-dom";
 import "./Login.css";
 
-export default function Login() {
+const Login = () => {
 
   const navigate = useNavigate();
 
@@ -65,4 +65,6 @@ export default function Login() {
       </div>
     </div>
   );
-}
+};
+
+export default Login;

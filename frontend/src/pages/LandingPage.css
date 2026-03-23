@@ -1,0 +1,138 @@
+/* Landing Page Container */
+.landing-page {
+  position: relative;
+  min-height: 100vh;
+  background-color: #0f172a; /* Dark fallback in case VantaBird fails */
+}
+
+/* Navbar */
+.lp-navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  box-sizing: border-box;
+}
+
+/* Logo */
+.lp-logo {
+  display: flex;
+  align-items: center;
+}
+.lp-logo img {
+  height: 2.5rem;
+  width: auto;
+}
+
+/* NavLinks */
+.lp-nav-links {
+  display: flex;
+  gap: 2rem;
+}
+.lp-nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.lp-nav-links a:hover {
+  color: #d1d5db;
+}
+
+/* Auth Buttons */
+.lp-auth-buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.lp-auth-login {
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: color 0.2s;
+}
+.lp-auth-login:hover {
+  color: #d1d5db;
+}
+.lp-auth-signup {
+  background: white;
+  color: black;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.lp-auth-signup:hover {
+  background: #f3f4f6;
+}
+
+/* Hero Section */
+.lp-hero-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.lp-hero-content {
+  position: relative;
+  z-index: 10;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  padding: 0 2rem;
+}
+.lp-hero-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+.lp-hero-subtitle {
+  font-size: 1.25rem;
+  color: #e5e7eb;
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+  line-height: 1.5;
+}
+.lp-hero-button {
+  background: white;
+  color: black;
+  border: none;
+  padding: 0.8rem 2.5rem;
+  border-radius: 6px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.lp-hero-button:hover {
+  background: #f3f4f6;
+}
+
+/* VantaBird Background */
+.lp-vanta-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Make sure it renders behind other elements, lp-hero-content has z-index: 10 */
+}

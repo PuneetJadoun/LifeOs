@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { removeToken } from "../utils/token";
 import "./Dashboard.css";
 
-export default function Dashboard() {
+const Dashboard = () => {
 
   const navigate = useNavigate();
 
@@ -26,4 +26,6 @@ export default function Dashboard() {
       </div>
     </div>
   );
-}
+};
+
+export default Dashboard;

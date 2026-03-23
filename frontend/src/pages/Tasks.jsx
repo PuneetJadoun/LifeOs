@@ -3,7 +3,7 @@ import { getTasks, createTask } from "../services/task.service";
 import { getWorkspaces } from "../services/workspace.service";
 import "./Tasks.css";
 
-export default function Tasks(){
+const Tasks = () => {
 
     const [tasks,setTasks] = useState([]);
     const [workspaces,setWorkspaces] = useState([]);
@@ -101,4 +101,6 @@ export default function Tasks(){
         </div>
 
     );
-}
+};
+
+export default Tasks;

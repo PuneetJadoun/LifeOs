@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { getWorkspaces, createWorkspace } from "../services/workspace.service";
 import "./Workspaces.css";
 
-export default function Workspaces(){
+const Workspaces = () => {
 
     const [workspaces,setWorkspaces] = useState([]);
     const [name,setName] = useState("");
@@ -59,4 +59,6 @@ export default function Workspaces(){
 
     );
 
-}
+};
+
+export default Workspaces;
