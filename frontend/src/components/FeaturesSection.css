@@ -1,0 +1,106 @@
+.features-section-wrapper {
+  background-color: #ffffff;
+  color: #111111;
+  padding: 40px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Features Media / Top Stats Box */
+.features-media-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 24px 40px;
+  width: 100%;
+  max-width: 900px;
+  border: 1px solid #eaeaea;
+}
+
+.stat-item {
+  text-align: center;
+  flex: 1;
+}
+
+.stat-value {
+  font-size: 26px;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+  color: #111111;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #666666;
+  margin: 0;
+}
+
+/* Features Content / 3x2 Grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.feature-card {
+  background-color: #f9f9f9;
+  border: 1px solid #eaeaea;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.2s;
+}
+
+.feature-card:hover {
+  background-color: #f0f0f0;
+}
+
+.feature-icon {
+  font-size: 24px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 32px;
+  height: 32px;
+}
+
+.feature-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  color: #111111;
+}
+
+.feature-description {
+  font-size: 14px;
+  color: #666666;
+  margin: 0;
+  line-height: 1.4;
+}
+
+
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  .features-media-box {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
